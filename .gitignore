@@ -1,0 +1,16 @@
+
+.buildpath
+.DS_Store
+.project
+
+application/session/*
+application/logs/*.php
+
+# ignore config
+application/config/config.php
+application/config/database.php
+application/config/app_config.php
+
+.htaccess
+
+.vscode

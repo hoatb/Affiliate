@@ -1,0 +1,102 @@
+.modal-authen-affiliate {
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 10;
+    }
+
+    .modal-content {
+        border-radius: 20px !important;
+        overflow: hidden;
+    }
+
+    .modal-body {
+        padding: 0;
+
+        .col-form {
+            padding: 50px 35px;
+        }
+
+        .col-banner {
+            background-color: #FFE5D0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .pic {
+                width: 80%;
+
+                img {
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+
+        .form-header {
+            margin-bottom: 45px;
+
+            .sub-title {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 26px;
+                color: var(--blue-900);
+                margin-bottom: 12px;
+            }
+
+            .text {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                color: #54595E;
+                a{
+                    font-weight: 500;
+                    color: var(--blue-600) !important;
+                }
+            }
+
+        }
+
+        .form-body {}
+
+        .form-footer {
+            .btn-submit{
+                background-color: var(--orange);
+                border: 1px solid var(--orange);
+                border-radius: 6px;
+            }
+        }
+        .text-muted{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 21px;
+            color: var(--blue-900)!important;
+            &:hover, &:focus{
+                color: var(--blue-600)!important;
+            }
+        }
+        .form-group {
+            .control-label {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 21px;
+                color: var(--blue-900);
+            }
+
+            .form-control {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 21px;
+                color: var(--blue-900);
+                padding: 12px 17px;
+                border: 1px solid #CED4DA;
+                height: auto;
+            }
+        }
+    }
+}

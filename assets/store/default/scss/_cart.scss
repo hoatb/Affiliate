@@ -1,0 +1,187 @@
+.cart-wrapper {
+    ul.cart-header {
+        border-radius: 0;
+    }
+
+    ul.cart-footer-row {
+        border-radius: 0;
+    }
+}
+
+.cart-page {
+     h2{
+        font-family: var(--font-family);
+        text-transform: uppercase;
+        font-size: 32px;
+    }
+    .cart-wrapper {
+        width: 50%;
+        float: left;
+        padding: 0 10px;
+    }
+
+    .non-confirm {
+        width: 50%;
+        float: left;
+        padding: 0 10px;
+        padding-left: 50px;
+    }
+
+    .step-head {
+        h2 {
+            text-align: left;
+            font-size: 20px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+    }
+
+    .checkout-payments-wrapper {
+        justify-content: flex-start;
+        flex-direction: column;
+
+        .payment-gateway-step {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+            align-items: center;
+            height: auto;
+            padding: 10px 25px;
+            border: 2px solid transparent;
+            margin: 10px 0;
+
+            img {
+                margin-right: 10px;
+            }
+
+            &:hover,
+            &:focus,
+            &.active {
+                border: 2px solid #2E4765;
+            }
+        }
+    }
+}
+
+#checkout-cart-form {
+    background-color: #ffffff;
+
+    .cart-header,
+    .cart-footer-row {
+        display: none !important;
+    }
+
+    .card-body {
+        background-color: #ffffff;
+    }
+
+    .cart-item-content {
+        p{
+            font-family: var(--font-family);
+            font-size: 16px;
+        }
+        h3 {
+            font-size: 20px;
+            font-family: serif;
+            font-family: var(--font-family);
+            color: var(--blue-800);
+            margin-top: 10px;
+        }
+    }
+
+    .cart-items-row {
+        flex-direction: column;
+        padding: 25px;
+        li {
+            width: 100%;
+            padding: 0 0;
+        }
+        .cart-item{
+            align-items: flex-start;
+        }
+        .img-cart {
+            width: 90px;
+            height: auto;
+           
+        }
+
+        .cart-item-content {
+            width: calc(100% - 90px);
+        }
+
+        .cart-item-price {
+            &.text-right {
+                justify-content: flex-end;
+            }
+        }
+    }
+
+    .cart-item-price {
+        font-size: 18px;
+        font-family: var(--font-family);
+        color: #666666;
+
+        label {
+            margin-bottom: 0;
+            font-size: 16px;
+            font-family: var(--font-family);
+            color: #666666;
+            font-weight: 400;
+        }
+        .cart-item-price-border-top{
+            border-top: 1px solid #cdcdcd;
+            margin-top: 10px;
+            padding-top: 10px;
+        }
+        .cart-sale-price {
+            font-family: var(--font-family);
+            font-size: 18px;
+            margin-left: 15px;
+        }
+
+        .cart-mini-total-item {
+            font-family: var(--font-family);
+            font-size: 18px;
+            margin-left: 15px;
+        }
+    }
+}
+
+.checkout-payments {
+    .custom-control.custom-checkbox {
+        padding-left: 0;
+        margin-top: 15px;
+        margin-left: 25px;
+        .custom-control-label{
+            font-family: var(--font-family);
+            font-size: 16px;
+        }
+    }
+
+    .custom-control-label {
+        &::before {
+            width: 20px;
+            height: 20px;
+            top: 2px;
+        }
+
+        &::after {
+            top: 4px;
+            background-size: 12px 12px;
+            left: -22px;
+        }
+    }
+
+    a.btn.btn-checoutcart.bg-main2.confirm-order {
+        margin-left: 0px;
+        font-size: 16px;
+        margin-bottom: 10px;
+        background-color: var(--orange);
+        border-color: var(--orange);
+        font-family: var(--font-family);
+        min-width: 250px;
+        padding: 10px 16px;
+            border-radius: 4px;
+    }
+}

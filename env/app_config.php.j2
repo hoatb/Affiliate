@@ -1,0 +1,15 @@
+<?php
+if (!defined('BASEPATH')) exit('No direct script access allowed');
+
+$config["app_config"] = array(
+    "user-agent" => "Affiliate Backend Service",
+    "content-type" => "application/json",
+    "internal-services" => array(
+        "orderservice" => array(
+            "domain" => '{{ internal_service.order_service }}',
+        ),
+        "policyservice" => array(
+            "domain" => '{{ internal_service.policy_service }}',
+        )
+    )
+);

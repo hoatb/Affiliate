@@ -1,0 +1,13 @@
+<IfModule mod_env.c>
+    SetEnv CI_ENV {{ application.ci_env }}
+</IfModule>
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule !.(js|css|eot|svg|ttf|woff|woff2|map)$ index.php [L]
+	RewriteRule ^$ /store/ [L,R=301]
+	RewriteCond %{HTTP_HOST} ^{{ application.base_url }}$
+	RewriteRule ^$ {{ application.base_url }} [L,R=301]
+	RewriteCond $1 !^(index\.php|assets)
+</IfModule>

@@ -1,0 +1,80 @@
+@media screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    #navbarSupportedContent {
+        &::before {
+            content: '';
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100vw;
+            background-color: #fff;
+            height: 100%;
+            top: 0;
+            position: absolute;
+            display: block;
+        }
+
+
+        .navbar {
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {}
+                }
+            }
+        }
+
+        .header-right-listing {
+            .dropdown {
+                margin: 0;
+                margin: 0px 0 0 20px;
+            }
+        }
+    }
+
+    header {
+        .navbar-expand-lg {
+            .navbar-collapse {
+                padding-top: 10px;
+            }
+
+            .navbar-nav {
+                .nav-link {
+                    padding: 12px 20px;
+                    margin-bottom: 3px;
+                }
+            }
+        }
+    }
+
+    .header-right-listing ul.js-dropdown-list2 {
+        left: 0;
+        right: 0;
+    }
+
+    .section-products {
+        .product-infomation {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .icon-product {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .section-insurance-package {
+        .feature-product {
+            padding-bottom: 0;
+            .item {
+                margin-bottom: 20px;
+                
+            }
+        }
+    }
+    .insurance-product-info{
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,30 @@
+
+application:
+  ci_env: production
+  base_url: 'https://affiliate.betall.vn'
+  host: affiliate.betall.vn
+
+db:
+  hostname: '127.0.0.1'
+  username: 'root'
+  password: ''
+  database: 'affiliatedb'
+  dbport: 3306
+  db_debug: 'true'
+
+internal_service:
+  order_service: 'https://orderservice02.insurplatform.vn'
+  policy_service: 'https://policyservice02.insurplatform.vn'
+
+log_level: 1
+
+session:
+  driver: 'database'
+  cookie_name: 'affiliate_brokers'
+  expiration: 7200
+  save_path: 'ci_session'
+  expire_on_close: 'false'
+  encrypt_cookie: 'false'
+  match_ip: 'false'
+  match_useragent: 'false'
+  time_to_update: 3000

@@ -1,0 +1,16 @@
+.title {
+    color: var(--blue-600);
+    text-transform: uppercase;
+}
+
+.custom-border-bot{
+    width: 150px;
+    border-bottom: 3px solid var(--orange);
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 480px){
+    .title {
+        font-size: 20px;
+    }
+  }

@@ -1,0 +1,338 @@
+.main {
+  padding-top: 120px;
+}
+.w-100{
+  width: 100%;
+}
+.pic {
+  width: 100%;
+  max-width: 100%;
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+.clear-fix{
+  clear: both;
+  width: 100%;
+  display: block;
+}
+.card {
+  border-radius: 0;
+  border-width: 0;
+}
+.hero-banner {
+  .img-banner {
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      display: block;
+    }
+    &.border-none {
+      border-radius: 0;
+    }
+  }
+}
+
+.section-categories {
+  .category {
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 35px 25px;
+    margin-bottom: 15px;
+    .icon {
+      height: 102px;
+      width: auto;
+      margin-bottom: 10px;
+      img {
+        height: 100%;
+        width: auto;
+        display: block;
+        margin: auto;
+      }
+    }
+    .title-name {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 17px;
+      color: var(--gray-dark);
+      text-align: center;
+    }
+  }
+}
+
+.section-features {
+  padding: 45px 0 65px 0;
+  .feature {
+    padding: 20px 45px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    .icon {
+      margin-bottom: 25px;
+      img {
+        height: 60px;
+        width: auto;
+        display: block;
+      }
+    }
+    .text {
+      max-width: 450px;
+      width: 100%;
+      text-align: right;
+    }
+    &.feature-left {
+      align-items: flex-start;
+      .text {
+        text-align: left;
+      }
+    }
+  }
+  .group-button {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.section-customer {
+  padding: 60px 0;
+  .customer-item {
+    img {
+      max-width: 80%;
+      width: 100%;
+      display: block;
+      margin: auto;
+      // transition: all .3s ease-in-out;
+    }
+    &.slick-center {
+      img {
+        max-width: 100%;
+        width: 100%;
+        // transition: all .3s ease-in-out;
+      }
+    }
+  }
+}
+
+.section-products {
+  .icon-product {
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 1rem;
+    img {
+      width: 100%;
+      display: block;
+      position: relative;
+      z-index: 2;
+    }
+    &::after {
+      content: "";
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #fff;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .product-infomation {
+    padding-top: 60px;
+  }
+  .bg-linear-gradient {
+    padding: 25px;
+    border-radius: 4px;
+  }
+  .product {
+    padding: 15px;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    .product-body {
+      display: flex;
+      justify-content: space-between;
+      .insur-content {
+        flex: 0 0 60%;
+        max-width: 60%;
+        width: 100%;
+        .category {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          color: var(--blue-600);
+          margin-bottom: 4px;
+        }
+        .name {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: var(--gray-dark);
+          margin-bottom: 4px;
+        }
+        .description {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
+          color: #6c757d;
+        }
+      }
+      .insur-images {
+        flex: 0 0 calc(40% - 10px);
+        max-width: calc(40% - 10px);
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .product-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 10px;
+      margin-top: 10px;
+      border-top: 1px solid #cdcdcd;
+      .price {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        font-family: var(--font-family);
+        color: var(--gray-dark);
+        .number {
+          color: var(--danger);
+        }
+      }
+      .btn-buynow {
+        padding: 6px 10px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #ffffff;
+        i{
+          color: #ffffff;
+        }
+        &:hover, &:focus{
+          background-color: var(--orange);
+        }
+      }
+    }
+  }
+}
+
+.section-insurance-package {
+  padding-top: 0;
+  position: relative;
+  z-index: 1;
+  .container{
+    position: relative;
+  }
+  .feature-product {
+   /*  position: absolute;
+    top: 0;
+    left: 50%; */
+    // transform: translate(-50%, -50px);
+    background-color: #ffffff;
+    background: #ffffff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    max-width: calc(100% - 40px);
+    width: 100%;
+    z-index: 11;
+    padding: 25px;
+    margin: -50px auto 0 auto;
+    .item{
+      position: relative;
+      padding-left: 30px;
+      .iconmoon{
+        position: absolute;
+        top: -5px;
+        left: 0;
+        font-size: 25px;
+        color: #28A745;
+      }
+    }
+  }
+
+  .insurance-product{
+    border: 1px solid #eaeaea;
+    padding: 20px;
+    border-radius: 4px;
+  }
+}
+
+
+.package-main{
+  .package{
+    margin-bottom: 20px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+
+.box-insurance-product{
+  padding: 15px;
+  border: 1px solid var(--blue-600);
+  border-radius: 4px;
+}
+
+.insurance-product-info{
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #F5F5FA;
+  .list-feature{
+    .feature{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      .label{}
+      .value{
+
+      }
+    } 
+  }
+}
+
+.breacrumb {
+  
+
+  &.breacrumb-insurance {
+    padding: 10px 0;
+    margin-bottom: 20px;
+    *{
+      font-family: var(--font-family);
+      font-size: 14px;
+        line-height: 1.3;
+        font-family: var(--font-family);
+
+    }
+    p{
+      
+    }
+    a {
+      font-family: var(--font-family);
+      color: #979797;
+      &:hover{
+        color: var(--blue-800);
+      }
+    }
+    .step-name{
+      color: var(--blue-800);
+      font-weight: 500;
+    }
+  }
+}

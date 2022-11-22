@@ -1,0 +1,185 @@
+@media screen and (max-width: 767px) {
+    #navbarSupportedContent {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+
+        .navbar {
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {}
+                }
+            }
+        }
+
+        .header-right-listing {
+            .dropdown {
+                margin: 0;
+                margin: 0px 0 0 20px;
+            }
+        }
+    }
+
+    header {
+        .navbar-expand-lg {
+            .navbar-collapse {
+                padding-top: 10px;
+            }
+
+            .navbar-nav {
+                .nav-link {
+                    padding: 12px 20px;
+                    margin-bottom: 3px;
+                }
+            }
+        }
+    }
+    .header-right-listing ul.js-dropdown-list2 {
+        left: 0;
+        right: 0;
+    }
+    section {
+        padding: 15px 0 15px 0;
+    }
+
+    .section-products {
+        .product-infomation {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .icon-product {
+                margin-right: 10px;
+                margin-bottom: 0;
+            }
+        }
+
+        .product {
+            .product-body {
+                flex-direction: column-reverse;
+
+                .insur-images,
+                .insur-content {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+
+                .insur-images {
+                    margin-bottom: 10px;
+                }
+            }
+
+            .product-footer {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    }
+
+    .section-categories {
+        .category {
+            padding: 15px 25px;
+
+            .icon {
+                height: 70px;
+            }
+        }
+    }
+
+    .section-insurance-package {
+        .feature-product {
+            margin-top: 20px;
+
+            .item {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .insurance-product-info {
+        margin-top: 20px;
+    }
+
+    .hero-banner {
+        margin-bottom: 20px;
+    }
+
+    .breacrumb.breacrumb-insurance {
+        margin-bottom: 0px;
+
+        .inner-pages-breadcrumb {
+            margin-top: 0;
+        }
+    }
+
+    .form-check-button {
+        .form-check-label {
+            padding-right: 50px;
+
+            &::before {
+                content: "";
+                padding: 0;
+                width: 35px;
+            }
+        }
+    }
+
+    .cart-page {
+        .non-confirm {
+            width: 100%;
+            padding-left: 0;
+        }
+
+        .cart-wrapper {
+            width: 100%;
+            padding: 0 0;
+        }
+    }
+
+    .cart-wrapper ul li.cart-item-price::before {
+        display: none;
+    }
+
+    #checkout-cart-form {
+        .cart-items-row {
+            .cart-item {
+                flex-direction: column;
+            }
+
+            .img-cart {
+                width: 100%;
+                max-width: 450px;
+                border-radius: 4px;
+
+                img {
+                    border-radius: 4px;
+                }
+            }
+
+            .cart-item-content {
+                width: 100%;
+                margin-bottom: 10px;
+                padding-left: 0;
+
+                h3 {
+                    font-size: 18px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+
+.configs-insur_physical_damage #form-group-configs .group-atc_CarCompany,
+.configs-insur_physical_damage #form-group-configs .group-atc_CarBrand,
+.configs-insur_physical_damage #form-group-configs .group-atc_SeatCapacity,
+.configs-insur_physical_damage #form-group-configs .group-atc_CarYearOfProduction,
+.configs-insur_physical_damage #form-group-configs .group-atc_CarYearOfUsing,
+.configs-insur_physical_damage #form-group-configs .group-atc_CarValue,
+.configs-insur_physical_damage #form-group-configs .group-atc_CarMaxInsuranceAmount,
+.configs-insur_physical_damage #form-group-configs .group-atc_CarDeduction{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+}
